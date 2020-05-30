@@ -25,11 +25,16 @@
         </dependency>
     </dependencies>
     <build>
+        <finalName>app</finalName>
         <plugins>
             <plugin>
                 <groupId>com.github.ulisesbocchio</groupId>
                 <artifactId>jasypt-maven-plugin</artifactId>
                 <version>3.0.2</version>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>

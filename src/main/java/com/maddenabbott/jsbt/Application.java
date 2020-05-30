@@ -19,6 +19,7 @@ public class Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println(environment.getRequiredProperty("test"));
+        System.out.println("Encrypted property 'test' in file application.properties contains value '"
+                + environment.getRequiredProperty("test") + "'");
     }
 }
